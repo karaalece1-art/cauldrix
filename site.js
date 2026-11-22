@@ -4,7 +4,8 @@ const selector = document.querySelector('#language');
 
 function chooseLanguage() {
   const url = new URL(location.href);
-  const requested = url.searchParams.get('lang') || url.hash.slice(1);
+  const anchorLanguage = url.hash.slice(1).split('-').at(-1);
+  const requested = url.searchParams.get('lang') || anchorLanguage;
   const language = names.has(requested) ? requested : (selector.value || 'en');
   const active = panels.find(panel => panel.dataset.language === language);
 
@@ -18,9 +19,15 @@ function chooseLanguage() {
   for (const key of ['support', 'privacy']) {
     const file = key === 'support' ? './' : 'privacy.html';
     for (const link of document.querySelectorAll('[data-link="' + key + '"]')) {
-      link.textContent = active.dataset[key];
+      if (!link.hasAttribute('data-keep-label')) link.textContent = active.dataset[key];
       link.setAttribute('href', language === 'en' ? file : file + '?lang=' + language);
     }
+  }
+  for (const link of document.querySelectorAll('[data-section]')) {
+    const key = link.dataset.section;
+    const section = key === 'how' ? 'how-to-play' : key;
+    link.textContent = active.dataset[key];
+    link.setAttribute('href', '#' + section + '-' + language);
   }
 }
 

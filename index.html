@@ -13,8 +13,10 @@
 <body>
   <header>
     <div class="frame bar">
-      <a class="brand" href="./"><img src="app-icon.png" width="192" height="192" alt=""><span>Cauldrix</span></a>
+      <a class="brand" data-link="support" data-keep-label href="./"><img src="app-icon.png" width="192" height="192" alt=""><span>Cauldrix</span></a>
       <nav class="nav">
+        <a data-section="how" href="#how-to-play-en">How to play</a>
+        <a data-section="features" href="#features-en">Game features</a>
         <a data-link="support" href="./" aria-current="page">Support</a> <a data-link="privacy" href="privacy.html">Privacy Policy</a>
         <select id="language" aria-label="Language" hidden>
           <option lang="en" value="en">English</option>
@@ -32,18 +34,107 @@
     <noscript><nav class="frame no-script-languages"><a href="#en" lang="en">English</a> <a href="#tr" lang="tr">Türkçe</a> <a href="#de" lang="de">Deutsch</a> <a href="#es" lang="es">Español</a> <a href="#fr" lang="fr">Français</a> <a href="#pt" lang="pt">Português</a> <a href="#ru" lang="ru">Русский</a> <a href="#it" lang="it">Italiano</a> <a href="#ja" lang="ja">日本語</a></nav></noscript>
   </header>
   <main class="frame">
-    <article id="en" lang="en" data-language="en" data-title="Cauldrix · Support" data-language-label="Language" data-support="Support" data-privacy="Privacy Policy">
+    <article id="en" lang="en" data-language="en" data-title="Cauldrix · Support" data-language-label="Language" data-support="Support" data-privacy="Privacy Policy" data-how="How to play" data-features="Game features">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Match three.<span>Master the cauldron.</span></h1>
           <p>Cauldrix is a tile-matching puzzle set in an alchemist’s tower. Clear the board, cast spells and use the stars you earn to restore the tower.</p>
           <div class="actions">
-            <a class="button" href="#help-en">Help &amp; support</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Support">Email support</a>
+            <a class="button" href="#how-to-play-en">How to play</a>
+            <a class="button secondary" href="#help-en">Help &amp; support</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Levels</dt><dd>800</dd></div>
+            <div><dt>Worlds</dt><dd>10</dd></div>
+            <div><dt>Spells</dt><dd>3</dd></div>
+            <div><dt>Languages</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-en" class="block" aria-labelledby="how-title-en">
+        <h2 id="how-title-en">How to play</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Pick an uncovered tile</h3>
+            <p>Tap a tile with nothing stacked on top of it. It moves into one of the cauldron’s seven slots.</p>
+          </li>
+          <li class="card">
+            <h3>Match three of a kind</h3>
+            <p>Three identical tiles clear a set and release essence. Quick matches build combos that earn more essence.</p>
+          </li>
+          <li class="card">
+            <h3>Leave room in the cauldron</h3>
+            <p>Plan which tiles to pick next. If the slots fill before you make a match, the cauldron overflows.</p>
+          </li>
+          <li class="card">
+            <h3>Clear the board</h3>
+            <p>Remove every tile to win coins and a star. Spend stars on restoration tasks to unlock new worlds.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-en" class="block" aria-labelledby="features-title-en">
+        <h2 id="features-title-en">Game features</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 levels</h3>
+            <p>Work through layered boards across 16 chapters. Frozen tiles appear in tougher stages and thaw one layer when you make a match.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Three spells</h3>
+            <p>Use Pull to move tiles to the shelf, Wind to rearrange the board, and Fire to burn a matching set. Spend the essence you collect to cast them.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Tower restoration</h3>
+            <p>Use stars to repair gates, bridges, fountains and other structures in the Tower tab. Finish the tasks in a world to open the next one.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Ten themed worlds</h3>
+            <p>Each world has its own scenery and tiles. The world map shows what you’ve unlocked and the objects you’ll see there.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Daily gift and rewards</h3>
+            <p>Claim 100 coins every 24 hours. When available, an optional reward video can give you 40 coins or an extra life in the relevant screen.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>An eighth slot</h3>
+            <p>Activate the extra-slot booster before a level to make room for one more tile during that attempt.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Worlds">
+          <li>The Alchemist&#x27;s Garden</li>
+          <li>Fairy Forest</li>
+          <li>Crystal Lake</li>
+          <li>Magic Bazaar</li>
+          <li>Frost Palace</li>
+          <li>Volcano Forge</li>
+          <li>Star Observatory</li>
+          <li>Dragon Valley</li>
+          <li>Cloud Kingdom</li>
+          <li>Candy Kingdom</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-en">
+        <h2 id="languages-title-en">Play in nine languages</h2>
+        <p>Change the game language any time in Settings.</p>
+        <ul class="chips" aria-label="Languages">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-en" class="block" aria-labelledby="help-title-en">
         <h2 id="help-title-en">Help &amp; support</h2>
@@ -53,6 +144,7 @@
           <details><summary>Where is my progress saved?</summary><p>Levels, coins, stars and inventory are saved on your device. Cauldrix has no account or built-in cloud sync. Moving to another device or reinstalling can result in lost progress.</p></details>
           <details><summary>What does Play Ad-Free remove?</summary><p>It removes ads between levels. Optional reward videos remain available when you choose to watch one.</p></details>
           <details><summary>How do I restore a purchase?</summary><p>In Shop, scroll to Restore purchases and use the same Apple or Google account. Availability depends on the store and app version. The store can restore Play Ad-Free, while spent items and currency are consumable. If a purchase is missing, reopen the game while online and contact us if it still does not appear.</p></details>
+          <details><summary>How do I start over?</summary><p>Choose Reset progress in Settings. This clears levels, coins, inventory and tower progress. Your settings and Play Ad-Free entitlement are kept.</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-en">
@@ -61,18 +153,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Support">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="tr" lang="tr" data-language="tr" data-title="Cauldrix · Destek" data-language-label="Dil" data-support="Destek" data-privacy="Gizlilik Politikası">
+    <article id="tr" lang="tr" data-language="tr" data-title="Cauldrix · Destek" data-language-label="Dil" data-support="Destek" data-privacy="Gizlilik Politikası" data-how="Nasıl oynanır" data-features="Oyun özellikleri">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Üç taşı eşleştir.<span>Kazana hükmet.</span></h1>
           <p>Cauldrix, bir simya kulesinde geçen taş eşleştirme bulmacası. Tahtayı temizle, büyüler yap ve kazandığın yıldızlarla kuleyi onar.</p>
           <div class="actions">
-            <a class="button" href="#help-tr">Yardım ve destek</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Destek">Destek ekibine yaz</a>
+            <a class="button" href="#how-to-play-tr">Nasıl oynanır</a>
+            <a class="button secondary" href="#help-tr">Yardım ve destek</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Seviye</dt><dd>800</dd></div>
+            <div><dt>Dünya</dt><dd>10</dd></div>
+            <div><dt>Büyü</dt><dd>3</dd></div>
+            <div><dt>Dil</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-tr" class="block" aria-labelledby="how-title-tr">
+        <h2 id="how-title-tr">Nasıl oynanır</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Üstü açık bir taş seç</h3>
+            <p>Üzerinde başka taş olmayan bir taşa dokun. Taş, kazanın yedi yuvasından birine gider.</p>
+          </li>
+          <li class="card">
+            <h3>Üç aynı taşı eşleştir</h3>
+            <p>Üç aynı taş temizlenir ve öz verir. Art arda hızlı eşleşmeler kombo oluşturur ve daha fazla öz kazandırır.</p>
+          </li>
+          <li class="card">
+            <h3>Kazana yer bırak</h3>
+            <p>Sıradaki taşlarını planla. Eşleşme yapamadan yuvalar dolarsa kazan taşar.</p>
+          </li>
+          <li class="card">
+            <h3>Tahtayı temizle</h3>
+            <p>Bütün taşları kaldırıp altın ve bir yıldız kazan. Yıldızları onarım görevlerinde harcayarak yeni dünyalar aç.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-tr" class="block" aria-labelledby="features-title-tr">
+        <h2 id="features-title-tr">Oyun özellikleri</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 seviye</h3>
+            <p>16 bölümde katmanlı tahtaları çöz. Zorlu seviyelerde buzlu taşlarla karşılaşırsın. Her eşleşme buzdan bir katman eritir.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Üç büyü</h3>
+            <p>Geri Çek taşları rafa alır, Rüzgâr tahtayı karıştırır, Ateş bir eşleşmeyi yakar. Biriktirdiğin özle büyü yapabilirsin.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Kuleyi onar</h3>
+            <p>Kule sekmesinde yıldız harcayarak kapıları, köprüleri, çeşmeleri ve diğer yapıları onar. Bir dünyanın görevlerini tamamlayınca sıradaki dünya açılır.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>On farklı dünya</h3>
+            <p>Her dünyanın manzarası ve taşları farklı. Dünya Haritası’ndan açtığın dünyaları ve oradaki objeleri görebilirsin.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Günlük hediye ve ödüller</h3>
+            <p>Her 24 saatte 100 altın al. İlgili ekranda reklam varsa, isteğe bağlı ödüllü video izleyerek 40 altın ya da bir can kazanabilirsin.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Sekizinci yuva</h3>
+            <p>Seviye öncesinde 8. Slot güçlendiricisini seçip o denemede kazana bir taş daha sığdır.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Dünya">
+          <li>Simyacı Bahçesi</li>
+          <li>Peri Ormanı</li>
+          <li>Kristal Göl</li>
+          <li>Sihirli Pazar</li>
+          <li>Buz Sarayı</li>
+          <li>Volkan Ocağı</li>
+          <li>Yıldız Gözlemevi</li>
+          <li>Ejderha Vadisi</li>
+          <li>Bulut Krallığı</li>
+          <li>Şeker Diyarı</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-tr">
+        <h2 id="languages-title-tr">Dokuz dilde oyna</h2>
+        <p>Oyun dilini Ayarlar’dan istediğin zaman değiştirebilirsin.</p>
+        <ul class="chips" aria-label="Dil">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-tr" class="block" aria-labelledby="help-title-tr">
         <h2 id="help-title-tr">Yardım ve destek</h2>
@@ -82,6 +263,7 @@
           <details><summary>İlerlemem nereye kaydediliyor?</summary><p>Seviyeler, altınlar, yıldızlar ve envanter cihazında saklanır. Cauldrix’te hesap veya bulut eşitlemesi bulunmaz. Cihaz değiştirirken ya da oyunu yeniden yüklerken ilerlemen kaybolabilir.</p></details>
           <details><summary>Reklamsız Oyna neyi kaldırıyor?</summary><p>Seviyeler arası reklamları kaldırır. İstersen ödüllü videoları izlemeye devam edebilirsin.</p></details>
           <details><summary>Bir satın alımı nasıl geri yüklerim?</summary><p>Mağaza’nın en altındaki Satın Alımları Geri Yükle düğmesini kullan. Satın alımın yapıldığı Apple veya Google hesabıyla giriş yap. İşlevin kullanılabilirliği mağazaya ve uygulama sürümüne bağlıdır. Reklamsız Oyna hakkı geri yüklenebilir. Harcanan eşyalar ve oyun parası tüketilebilir ürünlerdir. Bir satın alım eksikse internete bağlıyken oyunu yeniden aç, sorun devam ederse bize yaz.</p></details>
+          <details><summary>Oyuna nasıl baştan başlarım?</summary><p>Ayarlar’da İlerlemeyi Sıfırla’yı seç. Seviyeler, altın, envanter ve kule ilerlemesi silinir. Ayarların ve Reklamsız Oyna hakkın korunur.</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-tr">
@@ -90,18 +272,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Destek">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="de" lang="de" data-language="de" data-title="Cauldrix · Support" data-language-label="Sprache" data-support="Support" data-privacy="Datenschutzerklärung">
+    <article id="de" lang="de" data-language="de" data-title="Cauldrix · Support" data-language-label="Sprache" data-support="Support" data-privacy="Datenschutzerklärung" data-how="So geht’s" data-features="Spielfunktionen">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Drei gleiche Steine.<span>Ein magischer Kessel.</span></h1>
           <p>Cauldrix ist ein Kombinationsrätsel im Turm eines Alchemisten. Räume das Spielfeld ab, wirke Zauber und nutze deine Sterne, um den Turm wiederaufzubauen.</p>
           <div class="actions">
-            <a class="button" href="#help-de">Hilfe und Support</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Support">Support kontaktieren</a>
+            <a class="button" href="#how-to-play-de">So geht’s</a>
+            <a class="button secondary" href="#help-de">Hilfe und Support</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Level</dt><dd>800</dd></div>
+            <div><dt>Welten</dt><dd>10</dd></div>
+            <div><dt>Zauber</dt><dd>3</dd></div>
+            <div><dt>Sprachen</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-de" class="block" aria-labelledby="how-title-de">
+        <h2 id="how-title-de">So geht’s</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Wähle einen freien Stein</h3>
+            <p>Tippe auf einen Stein, auf dem kein anderer liegt. Er wandert in einen der sieben Plätze im Kessel.</p>
+          </li>
+          <li class="card">
+            <h3>Kombiniere drei gleiche Steine</h3>
+            <p>Drei gleiche Steine verschwinden und geben Essenz frei. Schnelle Kombinationen hintereinander liefern mehr Essenz.</p>
+          </li>
+          <li class="card">
+            <h3>Lass Platz im Kessel</h3>
+            <p>Plane, welche Steine du als Nächstes nimmst. Sind die Plätze vor der nächsten Kombination voll, läuft der Kessel über.</p>
+          </li>
+          <li class="card">
+            <h3>Räume das Spielfeld ab</h3>
+            <p>Entferne alle Steine, um Münzen und einen Stern zu verdienen. Investiere Sterne in Reparaturen, um neue Welten freizuschalten.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-de" class="block" aria-labelledby="features-title-de">
+        <h2 id="features-title-de">Spielfunktionen</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 Level</h3>
+            <p>Löse mehrschichtige Spielfelder in 16 Kapiteln. In schwierigeren Leveln schmilzt bei jeder Kombination eine Eisschicht.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Drei Zauber</h3>
+            <p>Mit deinen Essenzen kannst du Steine aufs Regal ziehen, das Feld mit Wind mischen oder eine Gruppe mit Feuer entfernen.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Baue den Turm wieder auf</h3>
+            <p>Repariere mit Sternen Tore, Brücken, Brunnen und andere Bauten im Turm-Tab. Die erledigten Aufgaben schalten die nächste Welt frei.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Zehn Themenwelten</h3>
+            <p>Jede Welt hat ihre eigene Kulisse und eigene Steine. Auf der Weltkarte findest du freigeschaltete Welten und ihre Objekte.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Tagesgeschenk und Belohnungen</h3>
+            <p>Hole alle 24 Stunden 100 Münzen ab. Ein freiwilliges Werbevideo bringt, sofern verfügbar, je nach Bildschirm 40 Münzen oder ein Leben.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Ein achter Platz</h3>
+            <p>Aktiviere vor dem Level den Extra-Platz-Booster, um für diesen Versuch einen zusätzlichen Stein unterzubringen.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Welten">
+          <li>Garten des Alchemisten</li>
+          <li>Feenwald</li>
+          <li>Kristallsee</li>
+          <li>Zauberbasar</li>
+          <li>Frostpalast</li>
+          <li>Vulkanschmiede</li>
+          <li>Sternwarte</li>
+          <li>Drachental</li>
+          <li>Wolkenreich</li>
+          <li>Zuckerreich</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-de">
+        <h2 id="languages-title-de">In neun Sprachen spielen</h2>
+        <p>Ändere die Spielsprache jederzeit in den Einstellungen.</p>
+        <ul class="chips" aria-label="Sprachen">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-de" class="block" aria-labelledby="help-title-de">
         <h2 id="help-title-de">Hilfe und Support</h2>
@@ -111,6 +382,7 @@
           <details><summary>Wo wird mein Fortschritt gespeichert?</summary><p>Level, Münzen, Sterne und Inventar bleiben auf deinem Gerät. Cauldrix hat kein Konto und keine eigene Cloud-Synchronisation. Beim Gerätewechsel oder der Neuinstallation kann dein Spielstand verloren gehen.</p></details>
           <details><summary>Was entfernt „Werbefrei spielen“?</summary><p>Es entfernt Werbung zwischen den Leveln. Du kannst weiterhin freiwillig Belohnungsvideos ansehen.</p></details>
           <details><summary>Wie stelle ich einen Kauf wieder her?</summary><p>Scrolle im Shop zu „Käufe wiederherstellen“ und verwende dasselbe Apple- oder Google-Konto. Die Verfügbarkeit hängt vom Store und der App-Version ab. „Werbefrei spielen“ kann wiederhergestellt werden. Verbrauchte Gegenstände und Spielwährung sind Verbrauchsartikel. Starte das Spiel online neu, wenn ein Kauf fehlt, und melde dich, falls er weiterhin nicht angezeigt wird.</p></details>
+          <details><summary>Wie starte ich neu?</summary><p>Wähle in den Einstellungen „Fortschritt zurücksetzen“. Level, Münzen, Inventar und Turmfortschritt werden gelöscht. Einstellungen und „Werbefrei spielen“ bleiben erhalten.</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-de">
@@ -119,18 +391,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Support">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="es" lang="es" data-language="es" data-title="Cauldrix · Soporte" data-language-label="Idioma" data-support="Soporte" data-privacy="Política de privacidad">
+    <article id="es" lang="es" data-language="es" data-title="Cauldrix · Soporte" data-language-label="Idioma" data-support="Soporte" data-privacy="Política de privacidad" data-how="Cómo se juega" data-features="Características">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Combina tres fichas.<span>Domina el caldero.</span></h1>
           <p>Cauldrix es un rompecabezas de fichas ambientado en la torre de un alquimista. Despeja el tablero, lanza hechizos y usa las estrellas que ganes para restaurar la torre.</p>
           <div class="actions">
-            <a class="button" href="#help-es">Ayuda y soporte</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Soporte">Escribir a soporte</a>
+            <a class="button" href="#how-to-play-es">Cómo se juega</a>
+            <a class="button secondary" href="#help-es">Ayuda y soporte</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Niveles</dt><dd>800</dd></div>
+            <div><dt>Mundos</dt><dd>10</dd></div>
+            <div><dt>Hechizos</dt><dd>3</dd></div>
+            <div><dt>Idiomas</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-es" class="block" aria-labelledby="how-title-es">
+        <h2 id="how-title-es">Cómo se juega</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Elige una ficha libre</h3>
+            <p>Toca una ficha que no tenga otra encima. Pasará a una de las siete casillas del caldero.</p>
+          </li>
+          <li class="card">
+            <h3>Combina tres fichas iguales</h3>
+            <p>Tres fichas iguales desaparecen y liberan esencia. Encadena combinaciones rápidas para ganar más esencia.</p>
+          </li>
+          <li class="card">
+            <h3>Deja espacio en el caldero</h3>
+            <p>Planifica qué fichas tocarás después. Si todas las casillas se llenan antes de una combinación, el caldero se desborda.</p>
+          </li>
+          <li class="card">
+            <h3>Despeja el tablero</h3>
+            <p>Retira todas las fichas para ganar monedas y una estrella. Usa las estrellas en tareas de restauración para desbloquear mundos.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-es" class="block" aria-labelledby="features-title-es">
+        <h2 id="features-title-es">Características</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 niveles</h3>
+            <p>Resuelve tableros de varias capas en 16 capítulos. En los niveles difíciles, cada combinación derrite una capa de hielo de las fichas congeladas.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Tres hechizos</h3>
+            <p>Gasta esencia para retirar fichas al estante, usar Viento para reorganizar el tablero o quemar un grupo con Fuego.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Restaura la torre</h3>
+            <p>Usa estrellas para reparar puertas, puentes, fuentes y otras construcciones en la pestaña Torre. Completa las tareas de un mundo para abrir el siguiente.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Diez mundos temáticos</h3>
+            <p>Cada mundo tiene escenarios y fichas propios. El mapa muestra los mundos que has abierto y sus objetos.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Regalo diario y recompensas</h3>
+            <p>Recoge 100 monedas cada 24 horas. Cuando esté disponible, un vídeo opcional puede darte 40 monedas o una vida, según la pantalla.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Una octava casilla</h3>
+            <p>Activa el potenciador de casilla extra antes del nivel para tener sitio para una ficha más durante ese intento.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Mundos">
+          <li>Jardín del alquimista</li>
+          <li>Bosque de las hadas</li>
+          <li>Lago de cristal</li>
+          <li>Bazar mágico</li>
+          <li>Palacio de hielo</li>
+          <li>Forja volcánica</li>
+          <li>Observatorio estelar</li>
+          <li>Valle del dragón</li>
+          <li>Reino de las nubes</li>
+          <li>Reino de los dulces</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-es">
+        <h2 id="languages-title-es">Juega en nueve idiomas</h2>
+        <p>Cambia el idioma del juego en cualquier momento desde Ajustes.</p>
+        <ul class="chips" aria-label="Idiomas">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-es" class="block" aria-labelledby="help-title-es">
         <h2 id="help-title-es">Ayuda y soporte</h2>
@@ -140,6 +501,7 @@
           <details><summary>¿Dónde se guarda mi progreso?</summary><p>Los niveles, las monedas, las estrellas y el inventario se guardan en el dispositivo. Cauldrix no tiene cuentas ni sincronización propia en la nube. Es posible perder el progreso al cambiar de dispositivo o reinstalar el juego.</p></details>
           <details><summary>¿Qué elimina «Jugar sin anuncios»?</summary><p>Elimina los anuncios entre niveles. Puedes seguir viendo vídeos con recompensa cuando lo elijas.</p></details>
           <details><summary>¿Cómo restauro una compra?</summary><p>Ve al final de la Tienda y toca «Restaurar compras» con la misma cuenta de Apple o Google. La disponibilidad depende de la tienda y la versión de la app. La tienda puede restaurar «Jugar sin anuncios». Los objetos y la moneda ya utilizados son consumibles. Si falta una compra, vuelve a abrir el juego con conexión y escríbenos si el problema continúa.</p></details>
+          <details><summary>¿Cómo vuelvo a empezar?</summary><p>Elige «Reiniciar progreso» en Ajustes. Se borran los niveles, monedas, inventario y avances de la torre. Se conservan los ajustes y «Jugar sin anuncios».</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-es">
@@ -148,18 +510,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Soporte">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="fr" lang="fr" data-language="fr" data-title="Cauldrix · Assistance" data-language-label="Langue" data-support="Assistance" data-privacy="Politique de confidentialité">
+    <article id="fr" lang="fr" data-language="fr" data-title="Cauldrix · Assistance" data-language-label="Langue" data-support="Assistance" data-privacy="Politique de confidentialité" data-how="Comment jouer" data-features="Fonctionnalités">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Associez trois tuiles.<span>Maîtrisez le chaudron.</span></h1>
           <p>Cauldrix est un jeu d’association de tuiles dans la tour d’un alchimiste. Videz le plateau, lancez des sorts et utilisez les étoiles gagnées pour restaurer la tour.</p>
           <div class="actions">
-            <a class="button" href="#help-fr">Aide et assistance</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Assistance">Écrire à l’assistance</a>
+            <a class="button" href="#how-to-play-fr">Comment jouer</a>
+            <a class="button secondary" href="#help-fr">Aide et assistance</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Niveaux</dt><dd>800</dd></div>
+            <div><dt>Mondes</dt><dd>10</dd></div>
+            <div><dt>Sorts</dt><dd>3</dd></div>
+            <div><dt>Langues</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-fr" class="block" aria-labelledby="how-title-fr">
+        <h2 id="how-title-fr">Comment jouer</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Choisissez une tuile dégagée</h3>
+            <p>Touchez une tuile qui n’en a pas d’autre au-dessus. Elle rejoint l’un des sept emplacements du chaudron.</p>
+          </li>
+          <li class="card">
+            <h3>Associez trois tuiles identiques</h3>
+            <p>Trois tuiles identiques disparaissent et libèrent de l’essence. Enchaînez rapidement les associations pour gagner plus d’essence.</p>
+          </li>
+          <li class="card">
+            <h3>Gardez de la place dans le chaudron</h3>
+            <p>Prévoyez quelles tuiles prendre ensuite. Si toutes les places se remplissent avant une association, le chaudron déborde.</p>
+          </li>
+          <li class="card">
+            <h3>Videz le plateau</h3>
+            <p>Retirez toutes les tuiles pour gagner des pièces et une étoile. Utilisez les étoiles dans les tâches de restauration pour ouvrir de nouveaux mondes.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-fr" class="block" aria-labelledby="features-title-fr">
+        <h2 id="features-title-fr">Fonctionnalités</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 niveaux</h3>
+            <p>Résolvez des plateaux à plusieurs couches dans 16 chapitres. Dans les niveaux difficiles, chaque association fait fondre une couche de glace.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Trois sorts</h3>
+            <p>Dépensez l’essence pour déplacer des tuiles sur une étagère, réorganiser le plateau avec le Vent ou brûler un groupe avec le Feu.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Restaurez la tour</h3>
+            <p>Dans l’onglet Tour, utilisez les étoiles pour réparer portes, ponts, fontaines et autres constructions. Terminez les tâches d’un monde pour débloquer le suivant.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Dix mondes à thème</h3>
+            <p>Chaque monde a ses propres décors et tuiles. La carte montre les mondes débloqués et les objets qu’on y trouve.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Cadeau quotidien et récompenses</h3>
+            <p>Récupérez 100 pièces toutes les 24 heures. Selon l’écran et la disponibilité, une vidéo facultative peut donner 40 pièces ou une vie.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Un huitième emplacement</h3>
+            <p>Activez le bonus d’emplacement avant un niveau pour faire de la place à une tuile de plus pendant cet essai.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Mondes">
+          <li>Jardin de l&#x27;alchimiste</li>
+          <li>Forêt des fées</li>
+          <li>Lac de cristal</li>
+          <li>Bazar magique</li>
+          <li>Palais de givre</li>
+          <li>Forge du volcan</li>
+          <li>Observatoire des étoiles</li>
+          <li>Vallée du dragon</li>
+          <li>Royaume des nuages</li>
+          <li>Royaume des bonbons</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-fr">
+        <h2 id="languages-title-fr">Jouez dans neuf langues</h2>
+        <p>Changez la langue du jeu à tout moment dans les paramètres.</p>
+        <ul class="chips" aria-label="Langues">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-fr" class="block" aria-labelledby="help-title-fr">
         <h2 id="help-title-fr">Aide et assistance</h2>
@@ -169,6 +620,7 @@
           <details><summary>Où ma progression est-elle enregistrée ?</summary><p>Les niveaux, les pièces, les étoiles et l’inventaire sont enregistrés sur votre appareil. Cauldrix ne propose ni compte ni synchronisation intégrée dans le cloud. Vous pouvez perdre votre progression en changeant d’appareil ou en réinstallant le jeu.</p></details>
           <details><summary>Que supprime « Jouer sans pub » ?</summary><p>Cette option supprime les publicités entre les niveaux. Vous pouvez toujours choisir de regarder des vidéos récompensées.</p></details>
           <details><summary>Comment restaurer un achat ?</summary><p>En bas de la boutique, choisissez « Restaurer les achats » avec le même compte Apple ou Google. La disponibilité dépend de la boutique et de la version de l’app. La boutique peut restaurer « Jouer sans pub ». Les objets et la monnaie utilisés sont des consommables. Si un achat manque, rouvrez le jeu en ligne et écrivez-nous s’il n’apparaît toujours pas.</p></details>
+          <details><summary>Comment recommencer ?</summary><p>Choisissez « Réinitialiser » dans les paramètres. Les niveaux, pièces, objets et la progression dans la tour sont effacés. Les réglages et « Jouer sans pub » sont conservés.</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-fr">
@@ -177,18 +629,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Assistance">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="pt" lang="pt" data-language="pt" data-title="Cauldrix · Suporte" data-language-label="Idioma" data-support="Suporte" data-privacy="Política de Privacidade">
+    <article id="pt" lang="pt" data-language="pt" data-title="Cauldrix · Suporte" data-language-label="Idioma" data-support="Suporte" data-privacy="Política de Privacidade" data-how="Como jogar" data-features="Recursos do jogo">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Combine três peças.<span>Domine o caldeirão.</span></h1>
           <p>Cauldrix é um quebra-cabeça de combinar peças na torre de um alquimista. Limpe o tabuleiro, lance feitiços e use as estrelas conquistadas para restaurar a torre.</p>
           <div class="actions">
-            <a class="button" href="#help-pt">Ajuda e suporte</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Suporte">Enviar e-mail ao suporte</a>
+            <a class="button" href="#how-to-play-pt">Como jogar</a>
+            <a class="button secondary" href="#help-pt">Ajuda e suporte</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Fases</dt><dd>800</dd></div>
+            <div><dt>Mundos</dt><dd>10</dd></div>
+            <div><dt>Feitiços</dt><dd>3</dd></div>
+            <div><dt>Idiomas</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-pt" class="block" aria-labelledby="how-title-pt">
+        <h2 id="how-title-pt">Como jogar</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Escolha uma peça livre</h3>
+            <p>Toque em uma peça sem outra por cima. Ela vai para um dos sete espaços do caldeirão.</p>
+          </li>
+          <li class="card">
+            <h3>Combine três peças iguais</h3>
+            <p>Três peças iguais desaparecem e liberam essência. Combinações rápidas em sequência rendem mais essência.</p>
+          </li>
+          <li class="card">
+            <h3>Deixe espaço no caldeirão</h3>
+            <p>Planeje quais peças pegar em seguida. Se os espaços ficarem cheios antes de uma combinação, o caldeirão transborda.</p>
+          </li>
+          <li class="card">
+            <h3>Limpe o tabuleiro</h3>
+            <p>Remova todas as peças para ganhar moedas e uma estrela. Use as estrelas em tarefas de restauração para desbloquear novos mundos.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-pt" class="block" aria-labelledby="features-title-pt">
+        <h2 id="features-title-pt">Recursos do jogo</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 fases</h3>
+            <p>Resolva tabuleiros com várias camadas em 16 capítulos. Nas fases mais difíceis, cada combinação derrete uma camada de gelo.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Três feitiços</h3>
+            <p>Gaste essência para puxar peças para a prateleira, usar Vento para reorganizar o tabuleiro ou queimar um grupo com Fogo.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Restaure a torre</h3>
+            <p>Na aba Torre, use estrelas para reparar portões, pontes, fontes e outras construções. Conclua as tarefas de um mundo para abrir o próximo.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Dez mundos temáticos</h3>
+            <p>Cada mundo tem seu próprio cenário e suas peças. No mapa, veja os mundos desbloqueados e seus objetos.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Presente diário e recompensas</h3>
+            <p>Resgate 100 moedas a cada 24 horas. Quando disponível, um vídeo opcional pode render 40 moedas ou uma vida, dependendo da tela.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Um oitavo espaço</h3>
+            <p>Ative o bônus de espaço extra antes da fase para acomodar mais uma peça nessa tentativa.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Mundos">
+          <li>Jardim do alquimista</li>
+          <li>Floresta das fadas</li>
+          <li>Lago de cristal</li>
+          <li>Bazar mágico</li>
+          <li>Palácio de gelo</li>
+          <li>Forja vulcânica</li>
+          <li>Observatório estelar</li>
+          <li>Vale do dragão</li>
+          <li>Reino das nuvens</li>
+          <li>Reino dos doces</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-pt">
+        <h2 id="languages-title-pt">Jogue em nove idiomas</h2>
+        <p>Altere o idioma do jogo a qualquer momento nas Configurações.</p>
+        <ul class="chips" aria-label="Idiomas">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-pt" class="block" aria-labelledby="help-title-pt">
         <h2 id="help-title-pt">Ajuda e suporte</h2>
@@ -198,6 +739,7 @@
           <details><summary>Onde meu progresso é salvo?</summary><p>Fases, moedas, estrelas e inventário são salvos no dispositivo. Cauldrix não tem conta ou sincronização própria na nuvem. Ao trocar de aparelho ou reinstalar o jogo, você pode perder o progresso.</p></details>
           <details><summary>O que «Jogar sem anúncios» remove?</summary><p>A opção remove os anúncios entre as fases. Os vídeos premiados continuam disponíveis quando você quiser assistir.</p></details>
           <details><summary>Como restauro uma compra?</summary><p>Na parte inferior da Loja, toque em «Restaurar compras» usando a mesma conta Apple ou Google. A disponibilidade depende da loja e da versão do aplicativo. A loja pode restaurar «Jogar sem anúncios». Itens e moedas já usados são consumíveis. Se uma compra estiver faltando, abra o jogo conectado à internet e escreva para nós caso o problema continue.</p></details>
+          <details><summary>Como começo de novo?</summary><p>Escolha «Reiniciar progresso» nas Configurações. Fases, moedas, inventário e progresso da torre são apagados. As configurações e «Jogar sem anúncios» são preservados.</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-pt">
@@ -206,18 +748,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Suporte">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="ru" lang="ru" data-language="ru" data-title="Cauldrix · Поддержка" data-language-label="Язык" data-support="Поддержка" data-privacy="Политика конфиденциальности">
+    <article id="ru" lang="ru" data-language="ru" data-title="Cauldrix · Поддержка" data-language-label="Язык" data-support="Поддержка" data-privacy="Политика конфиденциальности" data-how="Как играть" data-features="Особенности игры">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Соберите три плитки.<span>Укротите котёл.</span></h1>
           <p>Cauldrix — головоломка с плитками в башне алхимика. Очищайте поле, используйте заклинания и восстанавливайте башню за заработанные звёзды.</p>
           <div class="actions">
-            <a class="button" href="#help-ru">Помощь и поддержка</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0">Написать в поддержку</a>
+            <a class="button" href="#how-to-play-ru">Как играть</a>
+            <a class="button secondary" href="#help-ru">Помощь и поддержка</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Уровней</dt><dd>800</dd></div>
+            <div><dt>Миров</dt><dd>10</dd></div>
+            <div><dt>Заклинания</dt><dd>3</dd></div>
+            <div><dt>Языков</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-ru" class="block" aria-labelledby="how-title-ru">
+        <h2 id="how-title-ru">Как играть</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Выберите свободную плитку</h3>
+            <p>Нажмите на плитку, которую не перекрывают другие. Она переместится в одну из семи ячеек котла.</p>
+          </li>
+          <li class="card">
+            <h3>Соберите три одинаковые плитки</h3>
+            <p>Три одинаковые плитки исчезают и дают эссенцию. Быстрые совпадения подряд приносят больше эссенции.</p>
+          </li>
+          <li class="card">
+            <h3>Оставляйте место в котле</h3>
+            <p>Заранее решайте, какие плитки брать дальше. Если ячейки заполнятся до совпадения, котёл переполнится.</p>
+          </li>
+          <li class="card">
+            <h3>Очистите поле</h3>
+            <p>Уберите все плитки, чтобы получить монеты и звезду. Тратьте звёзды на восстановление построек, чтобы открыть новые миры.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-ru" class="block" aria-labelledby="features-title-ru">
+        <h2 id="features-title-ru">Особенности игры</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 уровней</h3>
+            <p>Решайте многоуровневые головоломки в 16 главах. На сложных уровнях каждое совпадение растапливает один слой льда на замороженных плитках.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Три заклинания</h3>
+            <p>Тратьте эссенцию, чтобы перенести плитки на полку, переставить их Ветром или сжечь совпадающую группу Огнём.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Восстановление башни</h3>
+            <p>Во вкладке башни тратьте звёзды на ремонт ворот, мостов, фонтанов и других построек. Завершите задания мира, чтобы открыть следующий.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Десять тематических миров</h3>
+            <p>В каждом мире свои пейзажи и плитки. На карте можно увидеть открытые миры и их предметы.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Ежедневный подарок и награды</h3>
+            <p>Забирайте 100 монет каждые 24 часа. Если видео доступно, за его добровольный просмотр можно получить 40 монет или жизнь, в зависимости от экрана.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Восьмая ячейка</h3>
+            <p>Активируйте дополнительную ячейку перед уровнем, чтобы в этой попытке вместить ещё одну плитку.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Миров">
+          <li>Сад алхимика</li>
+          <li>Волшебный лес</li>
+          <li>Хрустальное озеро</li>
+          <li>Волшебный базар</li>
+          <li>Ледяной дворец</li>
+          <li>Вулканическая кузня</li>
+          <li>Звёздная обсерватория</li>
+          <li>Долина драконов</li>
+          <li>Облачное королевство</li>
+          <li>Конфетное королевство</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-ru">
+        <h2 id="languages-title-ru">Играйте на девяти языках</h2>
+        <p>Язык игры можно изменить в настройках в любое время.</p>
+        <ul class="chips" aria-label="Языков">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-ru" class="block" aria-labelledby="help-title-ru">
         <h2 id="help-title-ru">Помощь и поддержка</h2>
@@ -227,6 +858,7 @@
           <details><summary>Где хранится мой прогресс?</summary><p>Уровни, монеты, звёзды и инвентарь сохраняются на вашем устройстве. В Cauldrix нет учётных записей и встроенной облачной синхронизации. При смене устройства или переустановке игры прогресс может потеряться.</p></details>
           <details><summary>Какую рекламу убирает «Играть без рекламы»?</summary><p>Эта функция убирает рекламу между уровнями. Видео с наградой по-прежнему можно смотреть по желанию.</p></details>
           <details><summary>Как восстановить покупку?</summary><p>Внизу раздела «Магазин» выберите «Восстановить покупки», используя ту же учётную запись Apple или Google. Доступность зависит от магазина и версии приложения. Магазин может восстановить право «Играть без рекламы». Использованные предметы и игровая валюта относятся к расходуемым покупкам. Если покупка не появилась, перезапустите игру с подключением к интернету и напишите нам, если проблема сохранится.</p></details>
+          <details><summary>Как начать заново?</summary><p>В настройках выберите «Сбросить прогресс». Уровни, монеты, инвентарь и прогресс башни будут сброшены. Настройки и право «Играть без рекламы» сохранятся.</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-ru">
@@ -235,18 +867,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="it" lang="it" data-language="it" data-title="Cauldrix · Assistenza" data-language-label="Lingua" data-support="Assistenza" data-privacy="Informativa sulla privacy">
+    <article id="it" lang="it" data-language="it" data-title="Cauldrix · Assistenza" data-language-label="Lingua" data-support="Assistenza" data-privacy="Informativa sulla privacy" data-how="Come si gioca" data-features="Funzioni del gioco">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>Abbina tre tessere.<span>Domina il calderone.</span></h1>
           <p>Cauldrix è un rompicapo di abbinamenti nella torre di un alchimista. Libera il tabellone, lancia incantesimi e usa le stelle guadagnate per restaurare la torre.</p>
           <div class="actions">
-            <a class="button" href="#help-it">Aiuto e assistenza</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Assistenza">Scrivi all’assistenza</a>
+            <a class="button" href="#how-to-play-it">Come si gioca</a>
+            <a class="button secondary" href="#help-it">Aiuto e assistenza</a>
           </div>
+          <dl class="metrics">
+            <div><dt>Livelli</dt><dd>800</dd></div>
+            <div><dt>Mondi</dt><dd>10</dd></div>
+            <div><dt>Incantesimi</dt><dd>3</dd></div>
+            <div><dt>Lingue</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-it" class="block" aria-labelledby="how-title-it">
+        <h2 id="how-title-it">Come si gioca</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>Scegli una tessera libera</h3>
+            <p>Tocca una tessera senza altre sopra. Si sposterà in uno dei sette spazi del calderone.</p>
+          </li>
+          <li class="card">
+            <h3>Abbina tre tessere identiche</h3>
+            <p>Tre tessere identiche scompaiono e liberano essenza. Gli abbinamenti rapidi in successione danno più essenza.</p>
+          </li>
+          <li class="card">
+            <h3>Lascia spazio nel calderone</h3>
+            <p>Pianifica le prossime tessere. Se tutti gli spazi si riempiono prima di un abbinamento, il calderone trabocca.</p>
+          </li>
+          <li class="card">
+            <h3>Libera il tabellone</h3>
+            <p>Rimuovi tutte le tessere per guadagnare monete e una stella. Usa le stelle per il restauro e sblocca nuovi mondi.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-it" class="block" aria-labelledby="features-title-it">
+        <h2 id="features-title-it">Funzioni del gioco</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800 livelli</h3>
+            <p>Risolvi tabelloni a più strati in 16 capitoli. Nei livelli più difficili, ogni abbinamento scioglie uno strato di ghiaccio.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Tre incantesimi</h3>
+            <p>Spendi essenza per spostare tessere sul ripiano, riorganizzare il tabellone con il Vento o bruciare un gruppo con il Fuoco.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Restaura la torre</h3>
+            <p>Nella scheda Torre usa le stelle per riparare porte, ponti, fontane e altri edifici. Completa i compiti di un mondo per aprire il successivo.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Dieci mondi a tema</h3>
+            <p>Ogni mondo ha scenari e tessere diversi. La mappa mostra i mondi sbloccati e i loro oggetti.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Regalo giornaliero e ricompense</h3>
+            <p>Ritira 100 monete ogni 24 ore. Se disponibile, un video facoltativo può darti 40 monete o una vita a seconda della schermata.</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>Un ottavo spazio</h3>
+            <p>Attiva il bonus dello spazio extra prima del livello per fare posto a un’altra tessera in quel tentativo.</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="Mondi">
+          <li>Il giardino dell&#x27;alchimista</li>
+          <li>Bosco delle fate</li>
+          <li>Lago di cristallo</li>
+          <li>Bazar magico</li>
+          <li>Palazzo di ghiaccio</li>
+          <li>Fucina del vulcano</li>
+          <li>Osservatorio stellare</li>
+          <li>Valle del drago</li>
+          <li>Regno delle nuvole</li>
+          <li>Regno dei dolci</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-it">
+        <h2 id="languages-title-it">Gioca in nove lingue</h2>
+        <p>Cambia la lingua del gioco quando vuoi nelle Impostazioni.</p>
+        <ul class="chips" aria-label="Lingue">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-it" class="block" aria-labelledby="help-title-it">
         <h2 id="help-title-it">Aiuto e assistenza</h2>
@@ -256,6 +977,7 @@
           <details><summary>Dove vengono salvati i miei progressi?</summary><p>Livelli, monete, stelle e inventario sono salvati sul dispositivo. Cauldrix non prevede account né sincronizzazione cloud integrata. Se cambi dispositivo o reinstalli il gioco, potresti perdere i progressi.</p></details>
           <details><summary>Che cosa rimuove «Gioca senza pubblicità»?</summary><p>Rimuove gli annunci tra i livelli. I video con ricompensa rimangono disponibili quando scegli di guardarli.</p></details>
           <details><summary>Come ripristino un acquisto?</summary><p>Scorri fino a «Ripristina acquisti» nel negozio e usa lo stesso account Apple o Google. La disponibilità dipende dal negozio e dalla versione dell’app. Il negozio può ripristinare «Gioca senza pubblicità». Gli oggetti e la valuta usati sono consumabili. Se un acquisto non compare, riapri il gioco connesso a Internet e scrivici se il problema persiste.</p></details>
+          <details><summary>Come ricomincio?</summary><p>Scegli «Azzera progressi» nelle Impostazioni. Livelli, monete, inventario e progressi della torre vengono azzerati. Le impostazioni e «Gioca senza pubblicità» si conservano.</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-it">
@@ -264,18 +986,107 @@
         <p><a href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20Assistenza">uygulamadunyasi26@gmail.com</a></p>
       </section>
     </article>
-    <article id="ja" lang="ja" data-language="ja" data-title="Cauldrix · サポート" data-language-label="言語" data-support="サポート" data-privacy="プライバシーポリシー">
+    <article id="ja" lang="ja" data-language="ja" data-title="Cauldrix · サポート" data-language-label="言語" data-support="サポート" data-privacy="プライバシーポリシー" data-how="遊び方" data-features="ゲームの特徴">
       <section class="hero">
         <div>
           <div class="studio">Can Can Studio</div>
           <h1>タイルを3つそろえよう。<span>大釜を使いこなそう。</span></h1>
           <p>Cauldrixは、錬金術師の塔を舞台にしたタイルパズルです。盤面を片づけ、魔法を使い、獲得したスターで塔を修復しましょう。</p>
           <div class="actions">
-            <a class="button" href="#help-ja">ヘルプとサポート</a>
-            <a class="button secondary" href="mailto:uygulamadunyasi26@gmail.com?subject=Cauldrix%20%C2%B7%20%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88">メールで問い合わせる</a>
+            <a class="button" href="#how-to-play-ja">遊び方</a>
+            <a class="button secondary" href="#help-ja">ヘルプとサポート</a>
           </div>
+          <dl class="metrics">
+            <div><dt>レベル</dt><dd>800</dd></div>
+            <div><dt>ワールド</dt><dd>10</dd></div>
+            <div><dt>魔法</dt><dd>3</dd></div>
+            <div><dt>言語</dt><dd>9</dd></div>
+          </dl>
         </div>
         <figure class="hero-art"><img src="splash.jpg" width="787" height="1400" alt="Cauldrix"></figure>
+      </section>
+      <section id="how-to-play-ja" class="block" aria-labelledby="how-title-ja">
+        <h2 id="how-title-ja">遊び方</h2>
+        <ol class="game-steps">
+          <li class="card">
+            <h3>上に何もないタイルを選ぶ</h3>
+            <p>他のタイルが上に重なっていないタイルをタップすると、大釜の7つの枠のうち1つに入ります。</p>
+          </li>
+          <li class="card">
+            <h3>同じタイルを3つそろえる</h3>
+            <p>同じタイルを3つそろえると消えてエッセンスが手に入ります。すばやく連続でそろえると、より多くのエッセンスを獲得できます。</p>
+          </li>
+          <li class="card">
+            <h3>大釜に空きを残す</h3>
+            <p>次に取るタイルを考えましょう。そろう前に枠がすべて埋まると、大釜があふれます。</p>
+          </li>
+          <li class="card">
+            <h3>盤面を片づける</h3>
+            <p>すべてのタイルを消すとコインとスター1個が手に入ります。スターを修復に使って、新しいワールドを解放しましょう。</p>
+          </li>
+        </ol>
+      </section>
+      <section id="features-ja" class="block" aria-labelledby="features-title-ja">
+        <h2 id="features-title-ja">ゲームの特徴</h2>
+        <div class="game-features">
+          <section class="card">
+            <img class="feature-icon" src="feature-cauldron.png" width="144" height="144" loading="lazy" alt="">
+            <h3>800レベル</h3>
+            <p>16チャプターにわたって、タイルが重なった盤面を攻略しましょう。難しいレベルでは、タイルがそろうたびに氷が1層ずつ溶けます。</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-magnet.png" width="144" height="144" loading="lazy" alt="">
+            <h3>3種類の魔法</h3>
+            <p>エッセンスを使ってタイルを棚に移したり、風で盤面を並べ替えたり、火でそろったタイルを燃やしたりできます。</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-tower.png" width="144" height="144" loading="lazy" alt="">
+            <h3>塔を修復</h3>
+            <p>塔のタブでスターを使い、門・橋・噴水などを修復します。ワールドのタスクを終えると、次のワールドが開きます。</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-map.png" width="144" height="144" loading="lazy" alt="">
+            <h3>10のテーマワールド</h3>
+            <p>ワールドごとに背景やタイルが異なります。マップでは解放済みのワールドと、そこに登場するアイテムを確認できます。</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-gift.png" width="144" height="144" loading="lazy" alt="">
+            <h3>デイリーギフトと報酬</h3>
+            <p>24時間ごとに100コインを受け取れます。動画が利用可能な場合、画面に応じて任意の報酬付き動画で40コインまたはライフ1つを獲得できます。</p>
+          </section>
+          <section class="card">
+            <img class="feature-icon" src="feature-extra_slot.png" width="144" height="144" loading="lazy" alt="">
+            <h3>8つ目の枠</h3>
+            <p>レベル開始前に追加スロットを使うと、その挑戦中だけタイルをもう1枚入れられます。</p>
+          </section>
+        </div>
+        <ul class="chips worlds" aria-label="ワールド">
+          <li>錬金術師の庭</li>
+          <li>妖精の森</li>
+          <li>クリスタル湖</li>
+          <li>魔法のバザール</li>
+          <li>氷の宮殿</li>
+          <li>火山の鍛冶場</li>
+          <li>星の天文台</li>
+          <li>ドラゴンの谷</li>
+          <li>雲の王国</li>
+          <li>お菓子の王国</li>
+        </ul>
+      </section>
+      <section class="block" aria-labelledby="languages-title-ja">
+        <h2 id="languages-title-ja">9言語に対応</h2>
+        <p>ゲームの言語は設定からいつでも変更できます。</p>
+        <ul class="chips" aria-label="言語">
+          <li lang="en">English</li>
+          <li lang="tr">Türkçe</li>
+          <li lang="de">Deutsch</li>
+          <li lang="es">Español</li>
+          <li lang="fr">Français</li>
+          <li lang="pt">Português</li>
+          <li lang="ru">Русский</li>
+          <li lang="it">Italiano</li>
+          <li lang="ja">日本語</li>
+        </ul>
       </section>
       <section id="help-ja" class="block" aria-labelledby="help-title-ja">
         <h2 id="help-title-ja">ヘルプとサポート</h2>
@@ -285,6 +1096,7 @@
           <details><summary>進行状況はどこに保存されますか？</summary><p>レベル、コイン、スター、所持アイテムは端末に保存されます。Cauldrixにはアカウントやゲーム独自のクラウド同期機能がありません。機種変更や再インストールで、進行状況が失われる場合があります。</p></details>
           <details><summary>「広告なしでプレイ」で何が消えますか？</summary><p>レベルの間に表示される広告が消えます。報酬付き動画は、希望するときに引き続き視聴できます。</p></details>
           <details><summary>購入を復元するには？</summary><p>購入時と同じAppleまたはGoogleのアカウントを使い、ショップの一番下にある「購入を復元」を選んでください。利用可否はストアとアプリのバージョンによります。「広告なしでプレイ」の権利は復元できます。使用したアイテムやゲーム内通貨は消耗型です。購入内容が反映されない場合は、インターネットに接続してゲームを開き直し、解決しなければお問い合わせください。</p></details>
+          <details><summary>最初から遊び直すには？</summary><p>設定で「進行状況をリセット」を選びます。レベル、コイン、所持アイテム、塔の進行状況が消去されます。設定と「広告なしでプレイ」の権利は保持されます。</p></details>
         </div>
       </section>
       <section class="contact block" aria-labelledby="contact-title-ja">
